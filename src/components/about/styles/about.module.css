@@ -1,0 +1,15 @@
+.dishImage {
+    position: relative;
+    width: 100%;
+    padding-top: 100%;
+    min-height: 450px;
+}
+
+.mainContainer{
+    padding-top: 90px;
+    padding-bottom: 80px;
+}
+
+.columnStyle{
+    margin-top: 40px;
+}
