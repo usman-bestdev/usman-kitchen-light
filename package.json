@@ -1,0 +1,29 @@
+{
+  "name": "usman-kitchen",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@types/node": "20.4.9",
+    "@types/react": "18.2.19",
+    "@types/react-dom": "18.2.7",
+    "animate.css": "^4.1.1",
+    "bootstrap": "^5.3.1",
+    "jquery": "^3.7.0",
+    "next": "13.4.13",
+    "popper.js": "^1.16.1",
+    "react": "18.2.0",
+    "react-bootstrap": "^2.8.0",
+    "react-dom": "18.2.0",
+    "react-owl-carousel": "^2.3.3",
+    "typescript": "5.1.6"
+  },
+  "devDependencies": {
+    "@types/jquery": "^3.5.16"
+  }
+}
