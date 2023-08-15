@@ -30,7 +30,6 @@ export const aboutDishImages = [
   {
     src: "/image-1.jpeg",
     fill: true,
-    style: { objectFit: "cover" },
     alt: "OurStrength Image",
     sizes: "(max-width: 480px) 100vw, 480px",
     priority: true,
@@ -38,7 +37,6 @@ export const aboutDishImages = [
   {
     src: "/image-2.jpeg",
     fill: true,
-    style: { objectFit: "cover" },
     alt: "OurStrength Image",
     sizes: "(max-width: 480px) 100vw, 480px",
     priority: true,

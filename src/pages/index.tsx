@@ -1,4 +1,5 @@
 import About from "@/components/about";
+import Hero from "@/components/hero";
 import Head from "next/head";
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
         <title>Usman Kitchen</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
+      <Hero />
       <About />
     </>
   );
