@@ -44,8 +44,8 @@ export const aboutDishImages = [
 ];
 
 export const aboutDescription = {
-  heading: "About",
-  subHeading: ` The Best Tasty & Yamee Food and Chief Based on Italiano`,
+  subHeading: "About",
+  heading: ` The Best Tasty & Yamee Food and Chief Based on Italiano`,
   description: `Sit amet consectetur adipiscing elitsue risus mauris quam neque
   adipiscing phasellus aenean ante orcirat scelerisque enim ut nulla
   vestibulum velvitae ut at elementum mauris, etiam ornare diame`,

@@ -8,9 +8,9 @@ export const dishImageClasses = `${styles.dishImage}`;
 
 export const buttonClasses = `text-white text-uppercase primaryButton`;
 
-export const headingClasses = `primaryColor px-3 text-uppercase fw-600`;
+export const subHeadingClasses = `primaryColor px-3 text-uppercase fw-600`;
 
-export const subHeadingClasses = `h2 primaryFont`;
+export const headingClasses = `h2 primaryFont`;
 
 export const descriptionClasses = `secondaryColor pb-2 pt-3`;
 

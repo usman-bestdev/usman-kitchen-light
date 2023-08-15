@@ -1,5 +1,6 @@
 import About from "@/components/about";
 import Hero from "@/components/hero";
+import OurChef from "@/components/ourChef";
 import Head from "next/head";
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
       </Head>
       <Hero />
       <About />
+      <OurChef />
     </>
   );
 }

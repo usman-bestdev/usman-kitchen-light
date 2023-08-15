@@ -36,7 +36,9 @@ const Hero: React.FC = () => {
             </div>
           </Col>
 
-          <Col {...rightContainerBreakPoints}>
+          <Col
+            {...rightContainerBreakPoints}
+            className="d-flex justify-content-end align-item-center p-0">
             <div className={dishImageClasses}>
               <Image
                 src={"/hero-1.jpg"}

@@ -1,0 +1,26 @@
+.mainContainer {
+    background-color: rgba(223, 63, 0, 0.07);
+    padding-bottom: 100px;
+    padding-top: 130px;
+    position: relative;
+}
+
+.background {
+    background-position: 100% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    left: 0;
+    opacity: .4;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-image: url('/dot-bg.png')
+}
+
+.chefImage {
+    position: relative;
+    width: 100%;
+    padding-top: 100%;
+    min-height: 301px;
+}

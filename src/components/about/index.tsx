@@ -27,9 +27,9 @@ const About: React.FC = () => {
         <Col {...leftContainerBreakPoints} className={columnClasses}>
           <div className={arrowImageContainerClasses}>
             <Image {...arrowImage} />
-            <p className={headingClasses}>{aboutDescription.heading}</p>
+            <p className={subHeadingClasses}>{aboutDescription.subHeading}</p>
           </div>
-          <p className={subHeadingClasses}>{aboutDescription.subHeading}</p>
+          <p className={headingClasses}>{aboutDescription.heading}</p>
           <p className={descriptionClasses}>{aboutDescription.description}</p>
           <Button className={buttonClasses} variant="text">
             learn more
