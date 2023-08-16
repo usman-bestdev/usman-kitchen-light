@@ -1,4 +1,5 @@
 import About from "@/components/about";
+import AppBar from "@/components/appBar";
 import BestFood from "@/components/bestFood";
 import Category from "@/components/category";
 import ContactUs from "@/components/contactUs";
@@ -13,6 +14,7 @@ export default function Home() {
         <title>Usman Kitchen</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
+      <AppBar />
       <Hero />
       <Category />
       <About />

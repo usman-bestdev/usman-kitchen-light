@@ -1,0 +1,45 @@
+.mainContainer{
+    margin-bottom: -100px;
+  border: 1px solid hsla(0,0%,100%,.1);
+  background-color: white;
+}
+
+.buttonStyle{
+    border: 1px solid #DF3F00;
+    color: white;
+    background-color:#DF3F00 ;
+    width: 100px;
+}
+
+.buttonStyle:hover{
+background-color: #DF3F00;
+    color: white;
+}
+
+
+.input{
+    background: transparent;
+    border: 1px solid #DF3F00;
+    color: #666666;
+    border-radius: 0;
+    font-size: 16px;
+    max-width: 200px;
+  }
+
+
+  .input:focus { 
+    background-color: transparent;
+    outline: none !important;
+    color: #666666;
+    border:1px solid #DF3F00;
+    box-shadow: none;
+ }
+
+ .logoContainer{
+    background-color: #DF3F00;
+    height: 60px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
