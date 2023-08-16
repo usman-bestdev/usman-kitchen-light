@@ -3,6 +3,7 @@ import AppBar from "@/components/appBar";
 import BestFood from "@/components/bestFood";
 import Category from "@/components/category";
 import ContactUs from "@/components/contactUs";
+import Footer from "@/components/footer";
 import Hero from "@/components/hero";
 import OurChef from "@/components/ourChef";
 import Head from "next/head";
@@ -21,6 +22,7 @@ export default function Home() {
       <BestFood />
       <OurChef />
       <ContactUs />
+      <Footer />
     </>
   );
 }

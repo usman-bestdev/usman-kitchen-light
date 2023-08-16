@@ -40,11 +40,12 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1023px) {
     .dishImage {
         width: 100%;
         padding-top: 100%;
         margin-bottom: 30px;
+        margin-top: 20px;
     }
 }
 

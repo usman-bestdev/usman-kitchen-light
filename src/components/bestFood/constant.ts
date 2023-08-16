@@ -28,6 +28,7 @@ export const bestFoodData = [
       alt: "Best Food Image",
       width: 140,
       height: 140,
+      priority: true,
     },
   },
   {
