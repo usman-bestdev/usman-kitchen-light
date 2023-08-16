@@ -1,0 +1,44 @@
+.dishImageContainer {
+    position: relative;
+    width: 100%;
+    padding-top: 100%;
+}
+
+.dishImage {
+    object-fit: cover;
+}
+
+.mainContainer{
+    background-color: rgba(223, 63, 0, 0.07);
+    padding-top: 90px;
+    padding-bottom: 80px;
+    position: relative;
+}
+
+.background {
+    background-position: 100% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    left: 0;
+    opacity: .4;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-image: url('/dot-bg.png')
+}
+
+.columnStyle{
+    margin-top: 40px;
+}
+
+.foodItemImage{
+    object-fit: cover;
+}
+
+@media (min-width: 1200px) {
+    .foodItemImage{
+        object-fit: contain;
+        margin-left: 50px
+    }
+}

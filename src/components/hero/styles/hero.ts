@@ -17,3 +17,5 @@ export const buttonContainerClasses = `d-flex gap-3 align-items-center`;
 export const buttonClasses = `text-white text-uppercase primaryButton p-3 `;
 
 export const mainRowClasses = `${styles.rowContainer} m-0`;
+
+export const rightContainerClasses = `d-flex justify-content-end align-item-center p-0`;

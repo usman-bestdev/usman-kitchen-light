@@ -1,26 +1,42 @@
-export const chefImagesData = [
-  {
-    imageSrc: "/team/chef-1.jpg",
-  },
-  {
-    imageSrc: "/team/chef-2.jpg",
-  },
-  {
-    imageSrc: "/team/chef-3.jpg",
-  },
-  {
-    imageSrc: "/team/chef-4.jpg",
-  },
-  {
-    imageSrc: "/team/chef-5.jpg",
-  },
-
-  {
-    imageSrc: "/team/chef-6.jpg",
-  },
-];
+import { ImageProps } from "next/image";
 
 export const chefImageSize = "(max-width: 768px) 100vw, 270px";
+
+export const imageProps = {
+  style: { objectFit: "contain", padding: "8px" } as React.CSSProperties,
+  fill: true,
+  sizes: chefImageSize,
+  alt: "chef  image",
+  priority: true,
+};
+
+export const chefImagesData: Array<ImageProps> = [
+  {
+    src: "/team/chef-1.jpg",
+    ...imageProps,
+  },
+  {
+    src: "/team/chef-2.jpg",
+    ...imageProps,
+  },
+  {
+    src: "/team/chef-3.jpg",
+    ...imageProps,
+  },
+  {
+    src: "/team/chef-4.jpg",
+    ...imageProps,
+  },
+  {
+    src: "/team/chef-5.jpg",
+    ...imageProps,
+  },
+
+  {
+    src: "/team/chef-6.jpg",
+    ...imageProps,
+  },
+];
 
 export const arrowImage = {
   src: "/prev-arrow.png",

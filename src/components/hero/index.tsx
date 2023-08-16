@@ -10,6 +10,7 @@ import {
   leftContainerClasses,
   mainContainerClasses,
   mainRowClasses,
+  rightContainerClasses,
 } from "./styles/hero";
 import Image from "next/image";
 import {
@@ -36,15 +37,14 @@ const Hero: React.FC = () => {
             </div>
           </Col>
 
-          <Col
-            {...rightContainerBreakPoints}
-            className="d-flex justify-content-end align-item-center p-0">
+          <Col {...rightContainerBreakPoints} className={rightContainerClasses}>
             <div className={dishImageClasses}>
               <Image
                 src={"/hero-1.jpg"}
                 fill
                 alt="OurStrength Image"
                 priority
+                sizes="(max-width: 640px) 100vw, 50vw"
               />
             </div>
           </Col>

@@ -1,35 +1,20 @@
-import React from "react";
-import {
-  Button,
-  Col,
-  Container,
-  Form,
-  InputGroup,
-  ListGroup,
-  Row,
-} from "react-bootstrap";
 import Image from "next/image";
-import Link from "next/link";
+import React from "react";
+import { Button, Col, Container, Row } from "react-bootstrap";
+import { arrowImage, chefImagesData, ourChefDetail } from "./constant";
 import {
   arrowImageContainerClasses,
+  buttonClasses,
   chefImageClasses,
-  subHeadingClasses,
-  mainBackgroundClasses,
-  mainContainerClasses,
-  headingClasses,
   descriptionClasses,
+  headingClasses,
+  mainContainerClasses,
+  subHeadingClasses,
 } from "./styles/ourChef";
-import {
-  arrowImage,
-  chefImageSize,
-  chefImagesData,
-  ourChefDetail,
-} from "./constant";
 
 const OurChef: React.FC = () => {
   return (
     <div className={mainContainerClasses}>
-      <div className={mainBackgroundClasses} />
       <Container>
         <Row className="m-0">
           <Col xl={4} lg={12} md={12} sm={12}>
@@ -38,22 +23,18 @@ const OurChef: React.FC = () => {
               <p className={subHeadingClasses}>{ourChefDetail.subHeading}</p>
             </div>
             <p className={headingClasses}>{ourChefDetail.heading}</p>
+            <p>25 Years of Experience in Restaurant Services in USA</p>
+            <p>Any Kind Of Food Made For Customer and So Much Yamee $ Testy </p>
             <p className={descriptionClasses}>{ourChefDetail.description}</p>
+            <Button className={buttonClasses}>Become a chef</Button>
           </Col>
 
           <Col xl={8} lg={12} md={12} sm={12}>
             <Row className="m-0">
-              {chefImagesData.map((chefData) => (
-                <Col xl={4} md={6} sm={12} key={chefData.imageSrc}>
+              {chefImagesData.map((chefData, index) => (
+                <Col xl={4} md={6} sm={12} key={index}>
                   <div className={chefImageClasses}>
-                    <Image
-                      style={{ objectFit: "contain", padding: "8px" }}
-                      src={chefData.imageSrc}
-                      fill
-                      sizes={chefImageSize}
-                      alt={chefData.imageSrc}
-                      priority
-                    />
+                    <Image {...chefData} />
                   </div>
                 </Col>
               ))}

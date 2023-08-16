@@ -1,4 +1,5 @@
 import About from "@/components/about";
+import BestFood from "@/components/bestFood";
 import Category from "@/components/category";
 import Hero from "@/components/hero";
 import OurChef from "@/components/ourChef";
@@ -14,6 +15,7 @@ export default function Home() {
       <Hero />
       <Category />
       <About />
+      <BestFood />
       <OurChef />
     </>
   );
