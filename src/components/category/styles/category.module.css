@@ -1,0 +1,26 @@
+.mainContainer {
+    background-color:#DF3F00;
+    padding-bottom: 70px;
+    padding-top: 80px;
+    position: relative;
+}
+
+.background {
+    background-position: 100% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    left: 0;
+    opacity: .1;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-image: url(/category-bg-1.jpg)
+}
+
+.cardImage{
+    width: 85px;
+    height: 85px;
+    object-fit: contain; 
+    margin-right: 30px;
+}
