@@ -3,7 +3,7 @@ import { ImageProps } from "next/image";
 export const chefImageSize = "(max-width: 768px) 100vw, 270px";
 
 export const imageProps = {
-  style: { objectFit: "contain", padding: "8px" } as React.CSSProperties,
+  style: { width: "100%", paddingBlock: "12px" } as React.CSSProperties,
   fill: true,
   sizes: chefImageSize,
   alt: "chef  image",

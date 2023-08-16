@@ -32,7 +32,7 @@ const OurChef: React.FC = () => {
           <Col xl={8} lg={12} md={12} sm={12}>
             <Row className="m-0">
               {chefImagesData.map((chefData, index) => (
-                <Col xl={4} md={6} sm={12} key={index}>
+                <Col xl={4} md={4} sm={12} key={index}>
                   <div className={chefImageClasses}>
                     <Image {...chefData} />
                   </div>

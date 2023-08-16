@@ -4,6 +4,7 @@ import BestFood from "@/components/bestFood";
 import Category from "@/components/category";
 import ContactUs from "@/components/contactUs";
 import Footer from "@/components/footer";
+import Gallery from "@/components/gallery";
 import Hero from "@/components/hero";
 import OurChef from "@/components/ourChef";
 import Head from "next/head";
@@ -22,6 +23,7 @@ export default function Home() {
       <BestFood />
       <OurChef />
       <ContactUs />
+      <Gallery />
       <Footer />
     </>
   );
