@@ -1,0 +1,41 @@
+.dishImage {
+    position: relative;
+    width: 85%;
+    padding-top: 85%;
+}
+
+.mainContainer{
+    padding-top: 50px;
+    padding-bottom: 80px;
+    background-color: rgba(223, 63, 0, 0.07);
+}
+
+.input{
+    background-color:#FBF8F5;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    color: #666666;
+    margin-block: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    min-height: 56px;
+    line-height: 34px;
+    padding: 10px 10px 10px 20px;
+  }
+
+
+  .input:focus { 
+    background-color: #FBF8F5;
+    outline: none !important;
+    color: #666666;
+    border:1px solid #e4c590;
+    box-shadow: none;
+ }
+
+@media (max-width: 768px) {
+    .dishImage {
+        width: 100%;
+        padding-top: 100%;
+        margin-bottom: 30px;
+    }
+}
+

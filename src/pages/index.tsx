@@ -1,6 +1,7 @@
 import About from "@/components/about";
 import BestFood from "@/components/bestFood";
 import Category from "@/components/category";
+import ContactUs from "@/components/contactUs";
 import Hero from "@/components/hero";
 import OurChef from "@/components/ourChef";
 import Head from "next/head";
@@ -17,6 +18,7 @@ export default function Home() {
       <About />
       <BestFood />
       <OurChef />
+      <ContactUs />
     </>
   );
 }
