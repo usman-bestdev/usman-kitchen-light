@@ -1,6 +1,6 @@
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
+import React, { useState } from "react";
 import { Button, Card, Col, Container, Row } from "react-bootstrap";
 
 import {
@@ -13,15 +13,28 @@ import {
   subHeadingClasses,
 } from "./styles/category";
 import { breakPoints, categoryCards, categoryDetail } from "./constant";
+import { animateFadeInDownBig } from "@/animation/animation";
 
 const Category: React.FC = () => {
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
+
   return (
-    <div className={mainContainerClasses}>
+    <div
+      className={mainContainerClasses}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}>
       <div className={mainBackgroundClasses} />
       <p className={subHeadingClasses}>{categoryDetail.subHeading}</p>
       <p className={headingClasses}>{categoryDetail.heading}</p>
       <Container>
-        <Row className="m-0">
+        <Row className={`m-0 ${isHovered ? animateFadeInDownBig : ""}`}>
           {categoryCards.map((card) => (
             <Col {...breakPoints} key={card.name} className="p-3 ">
               <Card className="cursorPointer">

@@ -19,15 +19,28 @@ import {
   mainBackgroundClasses,
   mainContainerClasses,
 } from "./styles/bestFood";
+import { useState } from "react";
+import { animateFlipInY } from "@/animation/animation";
 
 const BestFood: React.FC = () => {
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
   return (
     <div className={mainContainerClasses}>
       <div className={mainBackgroundClasses} />
       <Container>
         <Row className="m-0">
           <Col {...leftContainerBreakPoints} className={columnClasses}>
-            <div className={dishImageContainerClasses}>
+            <div
+              className={dishImageContainerClasses}
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}>
               <Image {...mainDish} className={dishImageClasses} />
             </div>
           </Col>
@@ -36,7 +49,12 @@ const BestFood: React.FC = () => {
             {bestFoodData.map((item) => (
               <Row className="m-0 my-3" key={item.name}>
                 <Col xl={4} lg={4} md={4} className="p-0 ">
-                  <Image {...item.image} className={itemImageClasses} />
+                  <Image
+                    {...item.image}
+                    className={`${itemImageClasses} ${
+                      isHovered ? animateFlipInY : ""
+                    }`}
+                  />
                 </Col>
                 <Col xl={8} lg={8} className={itemContainerClasses}>
                   <p className={itemHeadingClasses}>

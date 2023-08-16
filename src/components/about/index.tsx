@@ -19,8 +19,18 @@ import {
   rightContainerBreakPoints,
   rightInnerBreakPoints,
 } from "./constant";
+import { useState } from "react";
+import { animateBounceIn } from "@/animation/animation";
 
 const About: React.FC = () => {
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
   return (
     <Container className={mainContainerClasses}>
       <Row className="m-0">
@@ -43,8 +53,14 @@ const About: React.FC = () => {
                 {...rightInnerBreakPoints}
                 key={item.src}
                 className={columnClasses}>
-                <div className={dishImageClasses}>
-                  <Image {...item} />
+                <div
+                  className={dishImageClasses}
+                  onMouseEnter={handleMouseEnter}
+                  onMouseLeave={handleMouseLeave}>
+                  <Image
+                    {...item}
+                    className={isHovered ? animateBounceIn : ""}
+                  />
                 </div>
               </Col>
             ))}
