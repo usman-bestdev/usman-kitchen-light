@@ -1,8 +1,8 @@
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
 import { Button, Card, Col, Container, Row } from "react-bootstrap";
 
+import { animateFadeInDownBig } from "@/animation/animation";
+import { breakPoints, categoryCards, categoryDetail } from "./constant";
 import {
   buttonContainerClasses,
   cardImageClasses,
@@ -12,8 +12,6 @@ import {
   mainRowClasses,
   subHeadingClasses,
 } from "./styles/category";
-import { breakPoints, categoryCards, categoryDetail } from "./constant";
-import { animateFadeInDownBig } from "@/animation/animation";
 
 const Category: React.FC = () => {
   const [isHovered, setIsHovered] = useState(false);
